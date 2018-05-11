@@ -38,6 +38,7 @@ const ProjectLoaderHOC = function (WrappedComponent) {
                         }))
                         .catch(err => log.error(err));
                 });
+                console.log(window.location, this.state)
             }
         }
         componentWillUnmount () {
@@ -67,6 +68,7 @@ const ProjectLoaderHOC = function (WrappedComponent) {
                 projectId, // eslint-disable-line no-unused-vars
                 ...componentProps
             } = this.props;
+            console.log("render", this.state)
             if (!this.state.projectData) return null;
             return (
                 <WrappedComponent

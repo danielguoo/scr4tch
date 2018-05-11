@@ -73,6 +73,7 @@ class GUI extends React.Component {
         } = this.props;
         return (
             <GUIComponent
+                log={console.log(projectData)}
                 loading={fetchingProject || this.state.loading || loadingStateVisible}
                 vm={vm}
                 {...componentProps}

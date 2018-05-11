@@ -66,7 +66,6 @@ const GUIComponent = props => {
             </Box>
         );
     }
-
     const tabClassNames = {
         tabs: styles.tabs,
         tab: classNames(tabStyles.reactTabsTab, styles.tab),
@@ -85,9 +84,9 @@ const GUIComponent = props => {
             className={styles.pageWrapper}
             {...componentProps}
         >
-            {previewInfoVisible ? (
+            {/* {previewInfoVisible ? (
                 <PreviewModal />
-            ) : null}
+            ) : null} */}
             {loading ? (
                 <Loader />
             ) : null}
